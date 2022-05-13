@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600&family=Baloo+Thambi+2:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html {
+  /* background-image: url('/bg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  /* height: 100vh; */
+  font-family: "Baloo Bhaijaan 2", cursive;
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+}
+
+.header {
+  height: 60px;
+  background-color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 67px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+.logo {
+  margin: 15px;
+}
+.logo img {
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: 6px;
+}
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  list-style: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+}
+li a {
+  text-decoration: none;
+  padding: 3px;
+}
+li a:hover {
+  background-color: #dbccaf;
+  color: #0d0e15;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.section{
+    min-height: 100vh;
+    position: relative;
+    top: 1vh;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.home-content::before {
+  content: "";
+  background-image: url("/bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  height: 100%; 
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+.home-content h1 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+.home-content p {
+  text-align: center;
+  font-size: 16px;
+}
+.home-content button {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 9px;
+  border-radius: 7px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.service-section h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.service-section{
+    border: 5px solid red;
+}
+
+.service-content {
+  grid-template-columns: repeat(3, 1fr);
+  padding: 15px;
+  margin: 30px;
+}
+.box {
+  border: 2px solid red;
+  height: 400px;
+  background-color: white;
+  margin: 5px;
+}
+.box img {
+  height: 200px;
+  width: 150px;
+  padding: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box h2 {
+  text-align: center;
+}
+.box p {
+  text-align: center;
+  text-justify: auto;
+  padding: 10px;
+}
+.service-section::before {
+  content: "";
+  background-image: url("/service_bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.client-section {
+  height: 50vh;
+  /* border: 2px solid red ; */
+}
+.client-section h1 {
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold;
+}
+.client-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  width: 100%;
+}
+.client-box img {
+  width: 100px;
+  height: 80px;
+  padding: 10px;
+}
+.client-section::before {
+  content: "";
+  background-image: url("/service_bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+.contact-section {
+  height: 100vh;
+}
+.contact-section h1 {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+}
+.form-grp {
+  width: 20%;
+  margin: auto;
+}
+.form-grp input {
+  width: 98%;
+  margin: 1px;
+  padding: 2px;
+}
+.box-grp {
+  width: 21%;
+  margin: auto;
+}
+.box-grp textarea {
+  height: 140px;
+  width: 290px;
+}
+.contact-section::before {
+  content: "";
+  background-image: url("/bg\ img.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
